@@ -4,8 +4,7 @@
 
 #include <assert.h>
 #include "window.h"
-#include "../../Jimenez-PA3/Jimenez-PA3/graphics.h"
-
+#include "graphics.h"
 
 
 /*The engine class will be used to define the various methods in order to create the window, run the program, and to process
