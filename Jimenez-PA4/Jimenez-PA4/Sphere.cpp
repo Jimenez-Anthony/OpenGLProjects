@@ -1,6 +1,6 @@
 #include "Sphere.h"
 
-Sphere::Sphere(int prec, const char* fileName)
+Sphere::Sphere(int prec)
 {
 	// Vertex Set Up
 	setupVertices(prec);
@@ -73,11 +73,11 @@ bool Sphere::InitBuffers() {
 
 	glGenBuffers(1, &VB);
 	glBindBuffer(GL_ARRAY_BUFFER, VB);
-	glBufferData(GL_ARRAY_BUFFER, 8 * Vertices.size(), &Vertices[0], GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, 12 * Vertices.size(), &Vertices[0], GL_STATIC_DRAW);
 
 	glGenBuffers(1, &IB);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IB);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, 8 * Indices.size(), &Indices[0], GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, 12 * Indices.size(), &Indices[0], GL_STATIC_DRAW);
 
 	return true;
 }

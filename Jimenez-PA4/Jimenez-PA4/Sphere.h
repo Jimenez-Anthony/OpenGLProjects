@@ -3,13 +3,12 @@
 
 #include <vector>
 #include "graphics_headers.h"
-#include "object.h"
 #include <cmath>
 
 class Sphere
 {
 public:
-    Sphere(int prec, const char* fileName);
+    Sphere(int prec);
     Sphere();
     ~Sphere();
 
@@ -19,7 +18,6 @@ public:
     std::vector<glm::vec3> getVertices();
     std::vector<glm::vec2> getTexCoords();
     std::vector<glm::vec3> getNormals();
-    
 
     void Update(glm::mat4 model);
     void Render(GLint posAttrib, GLint colAttrib);
@@ -39,7 +37,6 @@ private:
     std::vector<glm::vec3> normals;
     std::vector<glm::vec2> texCoords;
     float toRadians(float degrees);
-
 
     GLuint VB;
     GLuint IB;

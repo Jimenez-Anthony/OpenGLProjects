@@ -56,11 +56,11 @@ void Pyramid::Render(GLint positionAttribLoc, GLint colorAttribLoc)
 
 void Pyramid::setupVertices() {
     Vertices = {
-    {{.0f, 2.f, .0f},{1,1,1}, {.5,1}}, // Top vertex
-    {{1.0f, .0f, 1.0f},{0,1,0}, {0,0}},
-    {{-1.0f, .0f, 1.0f},{0,0,1}, {0,1}},
-    {{-1.0f, .0f, -1.0f},{1,0,0},{0,0}},
-    {{1.0f, .0f, -1.0f},{0,0,1},{1,0}} // The four base vertices
+    {{.0f, 2.f, .0f},{1,1,1}}, // Top vertex
+    {{1.0f, .0f, 1.0f},{0,1,0}},
+    {{-1.0f, .0f, 1.0f},{0,0,1}}, 
+    {{-1.0f, .0f, -1.0f},{1,0,0}},
+    {{1.0f, .0f, -1.0f},{0,0,1}} // The four base vertices
     };
 
     Indices = {

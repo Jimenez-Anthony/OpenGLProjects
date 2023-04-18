@@ -76,10 +76,10 @@ bool Graphics::Initialize(int width, int height)
 	}
 
 	// Create a pyramid
-	m_sphere = new Sphere(100);  // inpit: (pivot location, angle, scale)
+	m_sphere = new Sphere(16);  // inpit: (pivot location, angle, scale)
 
 	// Create the object
-	m_sphere2 = new Sphere(100);
+	m_sphere2 = new Sphere(16);
 
 	//Create the spaceship
 	m_mesh = new Mesh(glm::vec3(3.f, 3.f, 3.f), 50, .3);

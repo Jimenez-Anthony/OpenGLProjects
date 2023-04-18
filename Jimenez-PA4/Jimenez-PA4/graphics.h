@@ -1,3 +1,5 @@
+#ifndef GRAPHICS_H
+#define GRAPHICS_H
 
 #include <iostream>
 #include <stack>
@@ -29,7 +31,6 @@ class Graphics
     GLint m_projectionMatrix;
     GLint m_viewMatrix;
     Shader* m_shader;
-    GLint m_modelMatrix;
 
 
   private:
@@ -41,6 +42,8 @@ class Graphics
         glm::mat4& tmat, glm::mat4& rmat, glm::mat4& smat);
 
     stack<glm::mat4> modelStack;
+
+    GLint m_modelMatrix;
     GLint m_positionAttrib;
     GLint m_colorAttrib;
 
@@ -52,3 +55,5 @@ class Graphics
  
 
 };
+
+#endif /* GRAPHICS_H */

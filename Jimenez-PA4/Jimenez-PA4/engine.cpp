@@ -122,7 +122,10 @@ void Engine::Display(GLFWwindow* window, double time) {
 
     m_graphics->Render();
     m_window->Swap();
-    //m_graphics->HierarchicalUpdate2(time);
+
+    // update graphics -> updates model
+    //m_graphics->Update(time);
+    m_graphics->HierarchicalUpdate2(time);
 }
 
 void cursorPositionCallBack(GLFWwindow* window, double xposIn, double yposIn) {

@@ -39,9 +39,8 @@ glm::mat4 Camera::GetView()
   return view;
 }
 
-void Camera::Update(glm::vec3 speed, float rotate) {
+void Camera::Update(glm::vec3 speed) {
     view = glm::translate(view, speed);
-    view = glm::rotate(cameraPos, rotate, cameraUp)
 }
 
 
